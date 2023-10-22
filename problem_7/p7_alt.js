@@ -11,7 +11,7 @@ let x = arr[count];
     removingIndex = arr.indexOf(arr[count]);
     console.log("removing this num: " + arr[removingIndex]);
     arr.splice(removingIndex, 1);
-    count--;
+    count--; // splicing reduced array length but not countsize hence count needs to held back by 1
   }
 }
 
